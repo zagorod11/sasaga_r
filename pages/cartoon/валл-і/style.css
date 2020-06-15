@@ -1,0 +1,164 @@
+.header{
+width: 100%;
+left: 0;
+top:0;
+height: 25%;  
+position: relative;
+float: left;
+}
+
+.content{
+width:70%;
+left: 15%;
+top: 210px;
+height: 65%;
+position: relative;
+float: left;
+text-align: center;
+}
+
+.footer{
+position: relative;
+float: left;
+width: 70%;
+left: 15%;
+top: 200px;
+height: 10%;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #262626;  
+  -moz-background-size: 100%;
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%;
+  background-size: 100%;
+}
+
+.MyLogo{
+  position: absolute;
+  top: 0;
+  left: 3%;
+  height: 130px;
+  width: 175px;
+  text-align: center;
+}
+h1{
+  position: absolute;
+  margin-left: 40%;
+  font-family: 'Anton';
+  color: #D3C5C4;
+
+} 
+
+.cr{
+  width: 300px;
+  height: 150px;
+  padding: 1%;
+
+}
+
+
+.cr:hover{
+    -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+
+
+h2{
+
+  font-family: 'Oswald';
+  color: #AAAAAA;
+  background: rgba(255,255,255,0.3);
+  border-radius: 5px;
+}
+
+
+
+
+a{
+  text-decoration:none;
+  color:#fff;
+  width:120px;
+  display:inline-block;
+  text-align:center;
+  transition:all .33s linear;
+  -webkit-transition:all .33s linear;
+  top: 10%;
+}
+
+
+ul {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  position: relative;
+  display: block;
+
+  color: #aaa;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  overflow: hidden;
+}
+ul li a::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  transition: 0.5s;
+}
+ul li a:hover {
+  color: #fff;
+}
+ul li a:hover::before {
+  animation: animate .5s linear forwards; 
+}
+
+@keyframes animate {
+  0% {
+    top: calc(50% - 2px);
+    left: -100%;
+    height: 4px;
+    z-index: 1;
+  }
+  50% {
+    top: calc(50% - 2px);
+    left: 0;
+    height: 4px;
+    z-index: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+  }
+
+
+
+  h4{
+ 
+  font-family: 'Oswald';
+  color: #AAAAAA;
+  background: rgba(255,255,255,0.3);
+  border-radius: 5px;
+}
+  
